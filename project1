@@ -9,8 +9,8 @@ public class  FibonacciAndPrime {
 
         boolean  isPrime = true;
         boolean isFibo = true;
-        if (isPrime && isFibo ){
-            System.out.println("yes");
+        if (isPrime = isFibo){
+            System.out.print((isFibo == isPrime) +  "yes");
 
         }else
             System.out.println("no");
