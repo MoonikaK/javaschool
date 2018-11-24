@@ -1,0 +1,21 @@
+package week4;
+
+import java.util.Scanner;
+
+public class TASK1 {
+    public static void main(String[] args) {
+        Scanner triangle = new Scanner(System.in);
+        int s1, s2, s3;
+
+        System.out.println("Type 3 number: ");
+        s1 = triangle.nextInt();
+        s2 = triangle.nextInt();
+        s3 = triangle.nextInt();
+
+        if (s1 - s2 <= s3 && s3 <= s1 + s2)
+            System.out.println("Yes");
+        else
+            System.out.println("No");
+
+    }
+}
