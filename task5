@@ -1,0 +1,52 @@
+package week4;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class TASK5 {
+    int getMax(int[] inputArray) {
+        int maxValue = inputArray[0];
+        for (int i = 1; i < inputArray.length; i++) {
+            if (inputArray[i] > maxValue) {
+                maxValue = inputArray[i];
+            }
+        }
+        return maxValue;
+
+    }
+
+    int getMin(int[] inputArray) {
+        int minValue = inputArray[0];
+        for (int i = 1; i < inputArray.length; i++) {
+            if (inputArray[i] < minValue) {
+                minValue = inputArray[i];
+            }
+        }
+        return minValue;
+
+
+    }
+
+}
+
+ class Main {
+    public static void main(String[] args) {
+        int n;
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("How many number will you enter: ");
+        n = scanner.nextInt();
+        int arr[] = new int[n];
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print("Enter [" + (i + 1) + "]number :");
+            arr[i] = scanner.nextInt();
+        }
+        TASK5 mm = new TASK5();
+        System.out.println("Min"+mm.getMax(arr));
+        System.out.println("max"+mm.getMin(arr));
+    }
+
+
+
+}
+
+
